@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('img1.jpg.png') no-repeat center center/cover; /* Background Image */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Dark overlay for contrast */
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    position: relative;
+    background: rgba(255, 255, 255, 0.95); /* Soft white background */
+    padding: 40px; /* More padding for spacious feel */
+    width: 90%;
+    max-width: 750px; /* Increased max width */
+    border-radius: 18px; /* Smoother edges */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 30px; /* Bigger font */
+    color: #2c3e50;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* Forms */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* More spacing between inputs */
+}
+
+/* Input Fields */
+input, select {
+    padding: 15px; /* Bigger padding for a premium feel */
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 10px rgba(52, 152, 219, 0.5);
+}
+
+/* Buttons */
+button {
+    background: #3498db;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 20px; /* Bigger font */
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+button:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Action Buttons */
+.complete-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.complete-btn:hover {
+    background: darkgreen;
+    transform: scale(1.05);
+}
+
+/* Links */
+.btn {
+    display: inline-block;
+    background: #3498db;
+    color: white;
+    padding: 15px;
+    text-decoration: none;
+    border-radius: 10px;
+    font-size: 18px;
+    transition: background 0.3s ease-in-out, transform 0.2s;
+}
+
+.btn:hover {
+    background: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Tables */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+    padding: 15px; /* Bigger padding */
+    text-align: center;
+    font-size: 18px;
+}
+
+th {
+    background: #3498db;
+    color: white;
+    font-size: 20px;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 500px) {
+    .container {
+        width: 95%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    input, button, select {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    table, th, td {
+        font-size: 16px;
+        padding: 12px;
+    }
+}
